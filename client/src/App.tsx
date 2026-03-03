@@ -195,6 +195,13 @@ export default function App() {
         <header className="mb-8 text-center relative">
           <div className="absolute right-0 top-0 flex gap-2">
             <button
+              onClick={clearHistory}
+              title="Clear Chat"
+              className="p-2 text-zinc-400 hover:text-red-500 transition-colors"
+            >
+              <Trash2 className="w-5 h-5" />
+            </button>
+            <button
               onClick={() => setShowSettings(!showSettings)}
               className="p-2 text-zinc-400 hover:text-zinc-600 transition-colors"
             >
